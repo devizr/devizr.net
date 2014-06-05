@@ -1,0 +1,446 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+  #Site Styles
+  #Page Styles
+  #Media Queries
+  #Font-Face */
+
+/* #Site Styles
+================================================== */
+html {
+  overflow-y: scroll;
+}
+
+body {
+
+}
+
+section#top {
+  padding: 26px 0 0;
+}
+
+section#top header {
+  float: left;
+  display: inline-block;
+}
+section#top nav {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 15px;
+  right: 0px;
+  height: 20px;
+}
+
+section#top h1 {
+  font-size: 2.2em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+header h1 span {
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+header h1 span#version {
+  color: #cea500;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  font-size: 1.0em;
+  display: inline-block;
+  margin-left: 21px;
+  text-transform: uppercase;
+}
+nav ul li a i,
+nav ul li a span {
+  color: #196B96;
+}
+nav ul li a.active i,
+nav ul li a.active span,
+nav ul li a:hover i,
+nav ul li a:hover span {
+  color: #333;
+}
+
+section#intro {
+  height: 390px;
+  background: url("../images/backgrounds/bg-intro.jpg") no-repeat scroll center center;
+  border-top: 5px solid #ddd;
+  border-bottom: 5px solid #ddd;
+  box-shadow: inset 0 -15px 15px -15px #333, inset 0 15px 15px -15px #333;
+  margin-bottom: 35px;
+}
+
+section#intro * {
+  color: #FFF;
+  font-weight: bold;
+}
+
+section#intro h2 {
+  /*text-transform: uppercase;*/
+  text-align: right;
+  color: #eee;
+  font-size: 2.4em;
+  margin-top: 58px;
+  line-height: 1.2em;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 12px #000;
+}
+
+section#intro .dark h2,
+section#intro .dark h2 span,
+section#intro .dark p {
+  color: #222;
+  text-shadow: 0 0 12px #aaa;
+}
+
+section#intro h2 span {
+/*  color: #cea500;*/
+  color: #ccc;
+}
+
+section#intro p {
+  font-size: 1.7em;
+  line-height: 1.4em;
+  text-align: right;
+  margin-top: 28px;
+
+}
+
+section#intro #screen {
+  position: relative;
+  margin-top: 35px;
+  /*padding: 12px;*/
+  height: 290px;
+  border: 1px solid #ccc;
+  background: #222;
+  box-shadow: 0 0 5px #222;
+  opacity: 0.95;
+  font-weight: normal;
+  letter-spacing: 0.11em;
+  /*background: url('../images/backgrounds/bg-screen.png') repeat;*/
+  background: url('../images/slider/clouds-33.png') repeat;
+  font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono','Monaco', Courier,monospace !important;
+  overflow:hidden;
+  padding: 0;
+}
+
+section#intro #screen h2,
+section#intro #screen p {
+  text-align: left;
+  font-family: "Open Sans", arial;
+  margin-top: 20px;
+} 
+section#intro #screen h2 {
+  font-size: 2.4em;
+  margin-top: 28px;
+  color: #cea500;
+}
+section#intro #screen p {
+  font-size: 1.5em;
+  width: 80%;
+  color: #ccc;
+}
+
+.teaser img {
+  float: left;
+  margin: 0 19px 10px 0;
+}
+
+
+p, li {
+  font-size: 1.1em;  
+}
+
+article {
+  padding: 20px 20px 0 20px ;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 3px solid #ddd;
+}
+
+.teaser p {
+  font-size: 1.3em;  
+}
+.teaser img {
+  float: left;
+  margin: 0 19px 10px 0;
+}
+
+#circles {
+  position: fixed;
+  z-index: 0;
+  opacity: 0.05;
+}
+
+hr {
+  clear:      both;
+  margin:     0 0 25px 0;
+  display:    block;
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h1 strong,
+a,
+a:visited {
+  color: #196B96;
+}
+
+
+footer {
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 0.8em;
+}
+
+#bullets {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 1000;
+}
+
+#bullets a {
+    background: url("../images/slider/bullets.png") repeat scroll left top rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    float: left;
+    height: 20px;
+    margin-left: 4px;
+    position: relative;
+    text-indent: -4000px;
+    width: 22px;
+}
+
+#bullets a.slide_active, 
+#bullets a:hover {
+  background-position: 0 100%;
+}
+
+/* #Page Styles
+================================================== */
+
+section article,
+section article {
+  background: url('../images/backgrounds/bg-features.png') repeat;
+}
+
+article div {
+  padding: 7px;
+}
+
+article {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #fff;
+  border-top: 5px solid #eee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0px 10px 30px;
+}
+article * {
+  font-family: Helvetica, arial, sans-serif;
+}
+
+article > h1 {
+  position: relative;
+  top: 3px;
+  left: 7px;
+  font-size: 20px;
+  color: #cea500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+#usecases {
+  margin-bottom: 40px;
+}
+
+#usecases article h2 {
+  margin: 0 8px 10px;
+  font-size: 18px;
+}
+
+#usecases article p {
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+#usecases aside {
+	border-radius: 5px;
+	border: 1px solid #eee;
+}
+
+#usecases aside ul,
+#usecases .example h3,
+#usecases .example h4,
+#usecases .example p,
+#usecases .example pre {
+	margin: 19px;
+}
+#usecases .example p {
+	padding-bottom: 19px;
+}
+
+#usecases .example h3 {
+  font-size: 24px;
+	border-bottom: 2px solid #ddd;
+}
+
+#usecases aside ul {
+	list-style: decimal;
+	margin-left: 39px;
+}
+
+#usecases aside ul a:hover {
+	text-decoration: underline;
+}
+
+
+/* #Media Queries
+================================================== */
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {}
+
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    section#intro h2 {
+      font-size: 1.9em;
+    }
+  }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+    
+    section#top {
+      padding: 17px 0 0;
+    }
+    section#intro {
+      height: inherit;
+      background: url("../images/backgrounds/bg-intro-mobile.jpg") no-repeat scroll center center;
+      border-top: 5px solid #ddd;
+      border-bottom: 5px solid #ddd;
+      box-shadow: inset 0 -15px 15px -15px #333, inset 0 15px 15px -15px #333;
+      margin-bottom: 35px;
+    }
+    
+    section#intro #screen {
+      margin-top: 25px;
+      margin-bottom: 35px;
+    }
+
+    section {
+      float: none;
+      text-align: center;
+    }    
+    section#top header {
+      float: none;
+      text-align: center;
+    }    
+    section#top nav {
+      float: none;
+      top: 10px;
+    }    
+    section#top nav ul li {
+      font-size: 1em;
+      margin: 0 7px;
+      text-align: center;
+    }
+    
+    section#intro h2,
+    section#intro p {
+      text-align: center;
+    }
+    section#intro h2 span {
+      display: block;
+    }
+
+    section#intro #screen {
+      display: none;
+    }
+
+  }
+
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+  }
+
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+    
+    section#intro {
+      padding-bottom: 20px;
+    }
+    .column p,
+    .column  li {
+      text-align: justify;
+    }
+    .teaser p {
+      font-size: 1.05em;  
+    }
+    .teaser img {
+      width: 7.4em;
+      margin: 0 17px 5px 0;
+    }
+    
+    section#top header h1 {
+      padding: 0;
+      line-height: 0.7em;
+    }
+    section#top header h1 strong,
+    section#top header h1 span {
+      font-size: 0.9em;
+    }
+
+    section#top header h5 {
+      font-size: 1em;
+    }
+    section#top header img {
+      width: 0.85em;
+    }
+
+    section#top nav {
+      text-align: center;
+      margin-bottom: 37px;
+    }
+    section#top nav ul li {
+      font-size: 2em;
+      text-align: center;
+    }
+    section#top nav ul li a span {
+      font-size: 0.35em;
+      display: block;
+    }
+    
+    hr {
+      margin: 0 0 15px 0;
+    }
+    
+    footer {
+      text-align: center;
+    }
+
+    
+
+  }
+

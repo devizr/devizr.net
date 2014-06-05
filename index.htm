@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Devizr</title>
+  <meta name="description" content="">
+  <meta name="author" content="Uli Preuss">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/stylesheets/font-awesome.css">
+  <link rel="stylesheet" href="assets/stylesheets/base.css">
+  <link rel="stylesheet" href="assets/stylesheets/skeleton.css">
+  <link rel="stylesheet" href="assets/stylesheets/layout.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="shortcut icon" href="assets/images/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icons/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+  
+  <section id="top" class="container">
+    <div class="sixteen columns">
+      
+      <header>
+        <h1>
+          <strong>devizr</strong> 
+          <span>asset manager</span>
+          <span id="version"></span>
+          <!-- <img src="assets/images/icon-beta-badge.png" alt=""/> -->
+        </h1>
+      </header>
+      
+      <nav>
+        <ul>
+          <li>
+            <a href="index.htm" class="active"><i class="fa fa-home"></i> <span>Home</span></a>
+          </li>
+          <li>
+            <a href="usage.htm"><i class="fa fa-book"></i> <span>Usage</span></a>
+          </li>
+          <li>
+            <a href="download.htm"><i class="fa fa-download"></i> <span>Download</span></a>
+          </li>
+          <li>
+            <a href="https://github.com/up/devizr/"><i class="fa fa-github"></i> <span>Source</span></a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr />
+    </div>
+  </section>
+  
+  <section id="intro">
+    <div class="container">
+
+      <div class="one-third column">
+        <h2>
+					Adaptive 
+					<span>Resource Loader</span>
+				</h2>
+        <!-- <p>
+					Adaptive <span>JavaScript &amp; CSS Loader</span>
+          Conditional Resource Loader
+          <span>Support devices</span> with customized assets
+          Front-End Package Management <span>made ​​simple</span
+          Support device features and load
+          Easy to use, scalable and framework compatible.
+          Simple, flexible, extensible.
+          <em></em>Only what's necessary.
+          Customized assets for different devices
+          Support different devices with customized assets
+          Increase Mobile Web Performance
+        </p> -->
+        <p>
+          <img src="assets/images/webstandards.png" alt=""/>
+        </p>
+      </div>
+
+      <div class="two-thirds column">
+        <div id="screen">
+           <!-- <span class="var">devizr</span>.<span class="prop">addTest</span>(<span class="string">'contact-page'</span>, <span class="reserved">function</span>(){<br/>
+            &nbsp;&nbsp;<span class="reserved">return</span> <span class="reserved">location</span>.<span class="prop">hash</span> === <span class="string">'#contact'</span>;<br/>
+          });
+           -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <div class="container">
+        
+    <div class="two-thirds column teaser">
+      <img src="assets/images/devices.png" alt=""/>
+      <h3>Increase Mobile Performance</h3>
+      <p>
+        Responsive Design is a well-established approach for optimized layout on different devices. 
+        But unfortunately no similar solution exists for the delivery of javascript files.
+      </p>
+      <p>
+        What's about Modernizr? Almost every developer loves (or at least uses) the feature detection library for HTML5/CSS3.
+        Possible, but not perfect. 
+      </p>
+      <p>
+        <strong>devizr</strong> works similarly -  
+        however, the focus is on the delivery of JavaScript depending on device characteristics.
+      </p>
+    </div>
+    
+    <div class="one-third column">
+      <article>
+        <h3>Getting Started</h3>
+        <p>
+          The easiest way to get started with devizr is to check out the 
+          <strong><a href="usage.htm">use cases and examples</a></strong>.
+        </p>
+        <p>
+          And have a look at the feature infos, select your choices and 
+          <strong><a href="download.htm">create your custom version</a></strong>.
+        </p>
+      </article>
+    </div>
+    
+    <hr/>    
+    
+    <div class="one-third column">
+      <h4>Architecture Principles</h4>
+      <ul class="square">
+        <li>
+          <strong>Basics First</strong>: 
+          A basic script contains only the code that is used in all browsers.
+        </li>
+        <li>
+          <strong>Progressive Enhancement</strong>:
+          If a browser supports certain features, the relevant JavaScript files are loaded.
+        </li>
+        <li>
+          <strong>Secure feature detection</strong>:
+          iframe
+        </li>
+        <li>
+          <strong>Reducing requests</strong>:
+          Use build systems like grunt, gulp or broccoli to concat all files in on minificated.
+        </li>
+        <li>
+          <strong>Minimizing file size</strong>:
+          Load only detection features you need to use.
+        </li>
+      </ul>
+    </div>
+
+    <div class="two-thirds column">
+      <h4>How Fast is Your Site?</h4>
+			<h5>Page Speed and Visitor Satisfaction</h5>
+      <p>
+        In our modern, connected world, the slightest delay in page load time can drive customers away, often permanently. Ensure that your sites, apps, and services meet escalating user expectations. From responsive web design to real time user monitoring, ..
+      </p>
+    </div>
+  
+    <div class="two-thirds column">
+      <h4>Responsive Behaviors</h4>
+      <p>
+        Smartphones are often due to their small viewports unsuitable for features such as complex sliders. 
+        Devices with touch screens often have trouble with smoothscrolling plugins that can allow 
+        on notebooks and desktops smoother movement through the content.
+      </p>
+    </div>
+  
+    <hr/>    
+
+    <footer>
+      Copyright &copy; 2014 Uli Preuss
+    </footer>    
+
+  </div>
+    
+  <script src="assets/javascripts/base.js"></script>
+  <script src="assets/javascripts/easing.js"></script>
+  <script src="assets/javascripts/slider.js"></script>  
+  <script src="assets/javascripts/slider.config.js"></script>
+
+</body>
+</html>

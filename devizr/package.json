@@ -1,0 +1,33 @@
+{
+  "name": "devizr",
+  "version": "0.5.2",
+  "description": "asset manager",
+  "main": "devizr.js",
+  "scripts": {
+    "test": "jasmine-node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/up/devizr.git"
+  },
+  "keywords": [
+    "device",
+    "asset",
+    "manager"
+  ],
+  "author": "Uli Preuss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/up/devizr/issues"
+  },
+  "homepage": "http://devizr.net",
+  "devDependencies": {
+    "gulp-jasmine": "^0.2.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.2.0",
+    "gulp-jshint": "^1.5.5",
+    "gulp-replace": "^0.2.0",
+    "gulp-uglify": "^0.2.1"
+  }
+}
