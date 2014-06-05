@@ -101,9 +101,9 @@ var slider = (function(){
     div.style.position = "absolute";
     div.style.top = html.position.top;
     div.style.left = html.position.left;
-		if(html.className) {
-			div.className = html.className;
-		}
+    if(html.className) {
+      div.className = html.className;
+    }
     screen.appendChild(div);          
   }
 

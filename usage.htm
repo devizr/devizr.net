@@ -62,63 +62,63 @@
   <section id="usecases" class="container">
 
     <div class="two-thirds column">
-			<article>
+      <article>
 
-	      <h1>Use Cases &amp; Examples</h1>
+        <h1>Use Cases &amp; Examples</h1>
       
-	      <h2>Why another resource loader?</h2>
+        <h2>Why another resource loader?</h2>
       
-	      <p>
-	        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-	        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-	      </p>
+        <p>
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+        </p>
 
-	      <h2>Two Parts: Feature detection and asset loading</h2>
+        <h2>Two Parts: Feature detection and asset loading</h2>
       
-	      <p>
-	        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-	        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-	      </p>
+        <p>
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+        </p>
 
-	    </article>
-		</div>
-		
-		<div class="one-third column">
-			<aside>
-				<ul>
-					<li><a href="#preparation">Preparation &amp; Initiation</a></li>
-					<li><a href="#manager">Asset Manager</a></li>
-					<li><a href="#customtests">Custom Tests</a></li>
-					<li><a href="#detection">Other Usage</a></li>
-				</ul>
-			</aside>
-		</div>
-			
+      </article>
+    </div>
+    
+    <div class="one-third column">
+      <aside>
+        <ul>
+          <li><a href="#preparation">Preparation &amp; Initiation</a></li>
+          <li><a href="#manager">Asset Manager</a></li>
+          <li><a href="#customtests">Custom Tests</a></li>
+          <li><a href="#detection">Other Usage</a></li>
+        </ul>
+      </aside>
+    </div>
+      
     <div id="preparation" class="example sixteen columns">
-			<h3>Preparation</h3>
-			<p>zzz</p>
+      <h3>Preparation</h3>
+      <p>zzz</p>
 
-			<h4>Generate Custom Script</h4>
-			<p>zzz</p>
+      <h4>Generate Custom Script</h4>
+      <p>zzz</p>
 
-			<h4>Add Devizr Script</h4>
-			<p>zzz</p>
-			<pre><code class="language-markup">&lt;script src="your/path/to/devizr.custom.js">&lt;/script>
+      <h4>Add Devizr Script</h4>
+      <p>zzz</p>
+      <pre><code class="language-markup">&lt;script src="your/path/to/devizr.custom.js">&lt;/script>
 </code></pre>
 
-			<h4>Initiation</h4>
-			<p>zzz</p>
-			<pre><code class="language-javascript">devizr.init();
+      <h4>Initiation</h4>
+      <p>zzz</p>
+      <pre><code class="language-javascript">devizr.init();
 </code></pre>
-		</div>
-		
+    </div>
+    
     <div id="manager" class="example sixteen columns">
-			<h3>Asset Manager</h3>
-			<p>xxx</p>
-			
-			<h4>Configuration</h4>
-			<p>xxx</p>
-			<pre><code class="language-javascript">var breakpoints = [
+      <h3>Asset Manager</h3>
+      <p>xxx</p>
+      
+      <h4>Configuration</h4>
+      <p>xxx</p>
+      <pre><code class="language-javascript">var breakpoints = [
   {
     width: 0,
     addons: {
@@ -153,63 +153,63 @@
 ];
 </code></pre>
 
-			<h4>Load Configuration</h4>
-			<p>zzz</p>
-			<pre><code class="language-javascript">devizr.load(breakpoints);
+      <h4>Load Configuration</h4>
+      <p>zzz</p>
+      <pre><code class="language-javascript">devizr.load(breakpoints);
 </code></pre>
-		</div>
-		
+    </div>
+    
     <div id="customtests" class="example sixteen columns">
-			<h3>Custom Tests</h3>
-			<p>Support for high-resolution displays with the srcset image attribute</p>
-			<pre><code class="language-javascript">devizr.addTest('attrsrcset', function(){
+      <h3>Custom Tests</h3>
+      <p>Support for high-resolution displays with the srcset image attribute</p>
+      <pre><code class="language-javascript">devizr.addTest('attrsrcset', function(){
   return test('img', 'srcset');
 });
 </code></pre>
-			<p>Router</p>
-			<pre><code class="language-javascript">devizr.addTest('contact-page', function(){
+      <p>Router</p>
+      <pre><code class="language-javascript">devizr.addTest('contact-page', function(){
   return location.hash === '#contact';
 });
 </code></pre>
 
-			<h4>Use 3rdParty Detection</h4>
-			<p>yyy</p>
-			<pre><code class="language-javascript">devizr.addTest('JQMOBILE', function(){
+      <h4>Use 3rdParty Detection</h4>
+      <p>yyy</p>
+      <pre><code class="language-javascript">devizr.addTest('JQMOBILE', function(){
   return jQuery.browser.mobile;
 });</code></pre>
-			<p>http://detectmobilebrowsers.com/download/javascript</p>
-			<pre><code class="language-javascript">devizr.env('MOBILE')</code></pre>
+      <p>http://detectmobilebrowsers.com/download/javascript</p>
+      <pre><code class="language-javascript">devizr.env('MOBILE')</code></pre>
 
-			<p>Use Modernizr Detection</p>
-			<pre><code class="language-javascript">devizr.addTest('cssanimations', function(){
+      <p>Use Modernizr Detection</p>
+      <pre><code class="language-javascript">devizr.addTest('cssanimations', function(){
   return Modernizr.cssanimations;
 });
 </code></pre>
 
-		</div>
-		
+    </div>
+    
     <div id="detection" class="example sixteen columns">
-			<h3>Other Usage</h3>
-			<p>zzz</p>
-			
-			<h4>Detect Feature</h4>
-			<p>zzz</p>
-			<pre><code class="language-javascript">if(devizr.feature('touch')) {
+      <h3>Other Usage</h3>
+      <p>zzz</p>
+      
+      <h4>Detect Feature</h4>
+      <p>zzz</p>
+      <pre><code class="language-javascript">if(devizr.feature('touch')) {
   console.log('Hi from touch device!');
 }
 </code></pre>
 
-			<h4>Get All Supported Features</h4>
-			<p>zzz</p>
-			<pre><code class="language-javascript">console.log(devizr.features)</code></pre>
+      <h4>Get All Supported Features</h4>
+      <p>zzz</p>
+      <pre><code class="language-javascript">console.log(devizr.features)</code></pre>
 
-			<h4>Detect Environment</h4>
-			<p>zzz</p>
-			<pre><code class="language-javascript">if(devizr.env('MOBILE')) {
+      <h4>Detect Environment</h4>
+      <p>zzz</p>
+      <pre><code class="language-javascript">if(devizr.env('MOBILE')) {
   console.log('Hi from mobile device!');
 }</code></pre>
-		</div>
-		
+    </div>
+    
   <section>
 
   <script src="assets/javascripts/base.js"></script>

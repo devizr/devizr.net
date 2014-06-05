@@ -4,15 +4,15 @@ var caniuse = require('./caniuse/caniuseInfos.json');
 
 var results = {};
 for(var feature in features) {
-	if(typeof features[feature] === 'string') {
-		results[feature] = caniuse[features[feature]];
-		results[feature].source = "caniuse.com";
-	} else {
-		results[feature] = features[feature] ;	
-		if(features[feature].source === undefined)	{
-			results[feature].source = "?";
-		}
-	}
+  if(typeof features[feature] === 'string') {
+    results[feature] = caniuse[features[feature]];
+    results[feature].source = "caniuse.com";
+  } else {
+    results[feature] = features[feature] ;  
+    if(features[feature].source === undefined)  {
+      results[feature].source = "?";
+    }
+  }
 }
 fs.writeFile("../data/features.json", JSON.stringify(results, null, '  '), function(err) {
   if(err) {
