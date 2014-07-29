@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+	<script src="../devizr/devizr.tests.js"></script>
+</head>
+<body>
+	<div></div>
+	<script>
+	var cache = {};
+	var xmlhttp=new XMLHttpRequest();
+	xmlhttp.onreadystatechange=function() {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	    features_conf = JSON.parse(xmlhttp.responseText);
+			
+			for(feature in tests) {
+				cache[feature] = '';
+				if(feature in features_conf) {
+				  document.querySelector('div').innerHTML+= feature + '<br>';
+				} else {
+				  document.querySelector('div').innerHTML+= '<b>' + feature + '</b><br>';					
+				}
+			}
+			
+			document.querySelector('div').innerHTML+= '<hr>';
+			
+			for(feature in features_conf) {
+				if(feature in cache) {
+				  
+				} else {
+				  document.querySelector('div').innerHTML+= '<b>' + feature + '</b><br>';					
+				}
+			}
+	  }
+	}
+	xmlhttp.open("GET","features.config.json",true);
+	xmlhttp.send();
+	</script>
+</body>
+</html>

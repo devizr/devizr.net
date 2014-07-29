@@ -221,8 +221,8 @@ getTextFile('data/features.json', function(json_content) {
 
         line = line.trim();
         
-        if (/^'\w+'/.test(line.trim())) {
-          name = '' + line.match(/^'\w+'/i, '') || '';
+        if (/^'[\w\-]+'/.test(line.trim())) {
+          name = '' + line.match(/^'[\w\-]+'/i, '') || '';
           name = name.replace(/'/g, "");
           if(infos[name]) {
             var source = infos[name].source || '';
@@ -245,7 +245,7 @@ getTextFile('data/features.json', function(json_content) {
             '</h3>' + '\n' + 
             '<p>' + infos[name].description + '</p>' + '\n' + 
             '<table>' + '\n' + 
-            '<tr><td><b>ID</b></td><td class="content">' + name + '</td></tr>' + '\n';
+            '<tr><td><b>Feature-ID</b></td><td class="content">' + name + '</td></tr>' + '\n';
           
             var support = infos[name].support;
             if(support && support !== '' && support !== '?' && support !== 'none') {

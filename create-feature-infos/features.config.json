@@ -44,7 +44,7 @@
     "description": "Give the current orientation of the screen (landscape, portrait)",
     "status": "Working Draft",
     "support": "Firefox for Android, IE 11, Firefox Mobile ?",
-    "source": "MDN XXXXX "
+    "source": "MDN Screen.orientation "
   },
   
   "vibrate": "vibration",
@@ -54,7 +54,7 @@
     "description": "Returns an array of Gamepad objects, one for each gamepad connected to the device.",
     "status": "Working Draft",
     "support": "Chrome 21, Firefox 24, ",
-    "source": "MDN XXXXX "
+    "source": "MDN Navigator.getGamepads "
   },
   
   "donottrack": {
@@ -62,7 +62,7 @@
     "description": "Returns the user's do-not-track setting. This is 'yes' if the user has requested not to be tracked by web sites, content, or advertising.",
     "status": "Working Draft",
     "support": "Chrome ?, Firefox 9, IE 9, Opera 12, Safari 5.1 (on OS X 10.7), Firefox Mobile 9",
-    "source": "MDN XXXXX "
+    "source": "MDN Navigator.donottrack "
   },
   
   "getusermedia": "stream",
@@ -74,7 +74,7 @@
     "description": "Returns the online status of the browser.",
     "status": "Working draft",
     "support": "Chrome ?, Firefox ?, IE 8*, Safari 5.0.4, Android Browser 2.2",
-    "source": "MDN XXXXX "
+    "source": "MDN Navigator.onLine "
   },
   
   "onlineevents": {
@@ -82,20 +82,14 @@
     "description": "Fired on the body-element of each page when the browser switches between online and offline mode.",
     "status": "",
     "support": "Firefox 3, ??",
-    "source": "MDN XXXXX "
+    "source": "MDN Online_and_offline_events "
   },
   
   "eventsource": "eventsource",
   
   "applicationcache": "offline-apps",
-  
-  "connection": {
-    "title": "Network Information API",
-    "description": "Represents a Connection containing information about the system's connection, such as the current bandwidth of the user's device or whether the connection is metered.",
-    "status": "Working Draft",
-    "support": "Firefox 12, Firefox Mobile 12, Android Browser 2.2, Firefox OS 1.5",
-    "source": "MDN XXXXX "
-  },
+	
+	"rtcpeerconnection": "rtcpeerconnection",
   
   "notification": "notifications",
   
@@ -106,6 +100,15 @@
   "xhr2": "xhr2",
   
   "cors": "cors",
+	
+  "sendbeacon": {
+    "title": "navigator.sendBeacon",
+    "description": "Method can be used to asynchronously transfer small HTTP data from the User Agent to a web server.",
+    "status": "Working Draft",
+    "support": "Chrome 37, Firefox 31, Firefox Mobile 31",
+    "source": "MDN navigator.sendBeacon"
+  },
+  
   
   "blobconstructor": "blobbuilder",
   
@@ -140,7 +143,7 @@
     "description": "Represents the nodes of a document subtree and a position within them.",
     "status": "Recommendation",
     "support": "Chrome 1, Firefox 2, IE 9, Opera 9, Safari 3, Android Browser ?, Firefox Mobile 1, IE Mobile ?, Opera Mobile 9, Safari Mobile 3",
-    "source": "MDN XXXXX "
+    "source": "MDN TreeWalker"
   },
   
   "nodeiterator": {
@@ -148,7 +151,7 @@
     "description": "Represents an iterator over the members of a list of the nodes in a subtree of the DOM. The nodes will be returned in document order.",
     "status": "Recommendation",
     "support": "Chrome 1, Firefox 3.5, IE 9, Opera 9, Safari 3, Android Browser ?, Firefox Mobile 1, IE Mobile ?, Opera Mobile 9, Safari Mobile 3",
-    "source": "MDN XXXXX "
+    "source": "MDN NodeIterator"
   },
   
   "range": {
@@ -156,7 +159,7 @@
     "description": "Represents a fragment of a document that can contain nodes and parts of text nodes in a given document",
     "status": "Recommendation",
     "support": "Range() constructor: Chrome ?, Firefox 24, Opera 15, Safari ?, Android Browser ?, Firefox Mobile 1, IE Mobile 9, Opera Mobile 9, Safari Mobile ?",
-    "source": "MDN XXXXX "
+    "source": "MDN Range"
   },
   
   "matchmedia": "matchmedia",
@@ -177,9 +180,9 @@
     "source": "caniuse.com"
   },
   
-  "performance": "user-timing",
-  
   "highresolutiontime": "high-resolution-time",
+  
+  "navigationtiming": "nav-timing",
   
   "usertiming": "user-timing",
   
@@ -194,23 +197,77 @@
     "description": "Returns the script-element whose script is currently being processed.",
     "status": "HTML Living Standard",
     "support": "Chrome 29, Firefox 4, Opera 16, Firefox Mobile ?",
-    "source": "MDN XXXXX "
+    "source": "MDN document.currentScript"
+  },
+	
+	"elem-template": "template",
+  
+  "elem-video": "video",
+  
+  "elem-audio": "audio",
+  
+  "elem-meter": {
+    "title": "Meter element",
+    "description": "Represents either a scalar value within a known range or a fractional value.",
+    "status": "Candidate Recommendation",
+    "support": "Chrome 6, Firefox 16, Opera 11, Safari 5.2, Firefox Mobile 16, Opera Mobile 11",
+    "source": "MDN Meter_element"
+  },
+	
+  "elem-progress": {
+    "title": "Progress element",
+    "description": "Display the completion progress of a task, typically displayed as a progress bar.",
+    "status": "Candidate Recommendation",
+    "support": "Chrome 6, Firefox 6, Opera 11, IE 10, Safari 5.2, Android, Firefox Mobile 6, Opera Mobile 11",
+    "source": "MDN Progress_element"
   },
   
-  "video": "video",
-  
-  "audio": "audio",
-  
-  "progressmeter": "progressmeter",
-  
-  "picture": {
+  "elem-picture": {
     "title": "Picture element",
     "description": "An HTML extension for adaptive images",
     "status": "Working Draft",
     "support": "none",
     "source": "http://www.w3.org/TR/html-picture-element/"
   },
+	
+  "elem-output": {
+    "title": "Output element",
+    "description": "Represents the result of a calculation or user action.",
+    "status": "Candidate Recommendation",
+    "support": "Chrome 10, Firefox 4, Opera 11, Safari nightly, Firefox Mobile 4",
+    "source": "MDN Output_element"
+  },
+
+  "elem-datalist": "datalist",
+
+  "elem-keygen": {
+    "title": "Keygen element",
+    "description": "Exists to facilitate generation of key material, and submission of the public key as part of an HTML form.",
+    "status": "Candidate Recommendation",
+    "support": "Chrome 1, Firefox 1, Opera 3, Safari 1.2, Android 1.2, Firefox Mobile 1",
+    "source": "MDN Keygen_element"
+  },
+
+  "elem-details": {
+    "title": "Details element",
+    "description": "Used as a disclosure widget from which the user can retrieve additional information.",
+    "status": "Candidate Recommendation",
+    "support": "Chrome 12, Opera 15, Safari 6, Android 4",
+    "source": "MDN Details_element"
+  },
+	
+  "attr-download": "download",
   
+  "attr-sandbox": "iframe-sandbox",
+	
+	"attr-input-pattern": {
+    "title": "pattern attribute for input elements",
+    "description": "A regular expression that the control's value is checked against.",
+    "status": "?",
+    "support": "Chrome 5, Firefox 4, IE 10, Opera 9.6, Firefox Mobile 4, Opera Mobile",
+    "source": "MDN Input_element"
+  },
+
   "SSL": {
     "title": "Detect secure connection",
     "description": "",
@@ -235,10 +292,6 @@
     "source": "http://kangax.github.io/compat-table/es5/"
   },
     
-  "attrdownload": "download",
-  
-  "attrsandbox": "iframe-sandbox",
-  
   "MOBILE": {
     "title": "Is mobile device (smartphone)",
     "description": "EXPERIMENTAL!",
@@ -274,7 +327,7 @@
     "support": ""
   },
   
-  "MACOS": {
+  "MACOSX": {
     "title": "Is Mac OS",
     "description": "",
     "status": "",

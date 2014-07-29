@@ -5,8 +5,12 @@ var caniuse = require('./caniuse/caniuseInfos.json');
 var results = {};
 for(var feature in features) {
   if(typeof features[feature] === 'string') {
-    results[feature] = caniuse[features[feature]];
-    results[feature].source = "caniuse.com";
+    try {
+	    results[feature] = caniuse[features[feature]];
+    	results[feature].source = "caniuse.com";
+    } catch (e) {
+    	throw feature + ' not found in "caniuseInfos.json"';
+    }
   } else {
     results[feature] = features[feature] ;  
     if(features[feature].source === undefined)  {
